@@ -19,6 +19,48 @@ Vue.use(VueRouter)
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/About.vue')
     }
+  },
+  {
+    path: '/dice',
+    name: 'Dice',
+    component: function () {
+      return import( '../views/Dice.vue')
+    }
+  },
+  {
+    path: '/fqa',
+    name: 'FAQ',
+    component: function () {
+       return import( '../views/FAQ.vue')
+    }
+  },
+  {
+    path: '/FAQ',
+    name: 'FAQ',
+    component: function () {
+      return import('../views/FAQ.vue')
+    }
+  },
+  {
+    path: '/calculator',
+    name: 'Calculator',
+    component: function () {
+      return import('../views/Calculator.vue')
+    }
+  },
+  {
+    path: '/clock',
+    name: 'Clock',
+    component: function () {
+     return import('../views/Clock.vue')
+    }
+  },
+  {
+    path: '/counter',
+    name: 'Counter',
+    component: function () {
+      return import('../views/Counter.vue')
+    }
   }
 ]
 
